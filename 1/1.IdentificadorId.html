@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="Titulo">
+        Titulo de Prueba
+    </h1>
+
+    <!-- Los Scripts siempre se deben ir despues del elemento a modificar  -->
+
+
+    <script>
+
+        
+        let title = document.getElementById("Titulo"); 
+        console.log("Valor titulo: "+ title.innerHTML);
+
+        //Otra sintaxis, usando el caracter backtick
+
+        console.log(`Valor titulo: ${ title.innerHTML}`);
+
+
+        //No solo podemos acceder a la información, sino también modificarla 
+
+        title.innerHTML = "Nuevo titulo"; 
+
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

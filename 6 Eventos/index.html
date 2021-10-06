@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Cambio de un elemento  -->
+
+    <!-- No es una buena practica -->
+
+    <h1 onclick="this.innerHTML = 'Cambio de Titulo'">Titulo</h1>
+
+
+    <!-- Buenas practicas -->
+
+         <!-- Forma1 -->
+
+    <h1 id="title1" onclick="changeText()">Buenas practicas</h1>
+
+
+   
+
+    <script>
+
+        function changeText(){
+
+
+            document.getElementById('title1').innerHTML = "Exato, buenas practicas"
+
+
+        }
+
+    </script>
+
+
+
+    <!-- Forma 2 -->
+
+    <h1 onclick="texto(this)" >Buenas practicas 2 </h1>
+
+
+    <script>
+
+        function texto(title){
+
+            title.innerHTML = "Nuevo titulo"
+
+
+        }
+
+    </script>   
+    
+    
+
+
+    <!-- Cambiar titulo desde javaScript -->
+
+    <h1 id="titulo3"> Texto</h1>
+
+    <script>
+
+        document.getElementById('titulo3').onclick = cambioDeTexto; 
+
+        function cambioDeTexto(){
+
+            document.getElementById('titulo3').innerHTML = 'Prueba3'
+        }
+
+
+    </script>
+
+</body>
+</html>
